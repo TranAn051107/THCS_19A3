@@ -1,6 +1,9 @@
-gia_san_pham = float(input("Nhập giá sản phẩm: "))
-so_luong = int(input("Nhập số lượng sản phẩm: "))
-tong_chi_phi = gia_san_pham * so_luong
-vat = tong_chi_phi * 0.1
-tong_tien = tong_chi_phi + vat
-print("Tổng tiền phải trả: {:.2f} ".format(tong_tien))
+n = int(input("Nhap vao mot so: "))
+i = 0
+while i <= n:
+    if i*i == n:
+        print(f"so {n} la so chinh phuong")
+        break
+    i = i + 1
+else:
+    print(f"so {n} khong phai la so chinh phuong")
